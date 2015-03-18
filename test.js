@@ -9,20 +9,27 @@ it('should check if a string has ANSI escape codes', function () {
 });
 
 describe('the cli', function () {
-
 	it('should exit with 0 if called with stdin containing ANSI escape codes', function (done) {
-		var cli = childProcess.exec('echo -e "foo\u001b[4mcake\u001b[0m" | ./cli.js');
+		var cli = childProcess.spawn('./cli.js');
+
 		cli.on('exit', function (code) {
 			assert(code === 0);
-			done()
+			done();
 		});
+
+		cli.stdin.write('foo\u001b[4mcake\u001b[0m');
+		cli.stdin.end();
 	});
 
 	it('should exit with 1 if called with stdin containing ANSI escape codes', function (done) {
-		var cli = childProcess.exec('echo -e "boring plain old string" | ./cli.js');
+		var cli = childProcess.spawn('./cli.js');
+
 		cli.on('exit', function (code) {
 			assert(code === 1);
-			done()
+			done();
 		});
+
+		cli.stdin.write('boring plain old string');
+		cli.stdin.end();
 	});
 });

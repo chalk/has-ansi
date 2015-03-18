@@ -5,7 +5,7 @@
 
 ## Install
 
-```sh
+```
 $ npm install --save has-ansi
 ```
 
@@ -25,7 +25,7 @@ hasAnsi('cake');
 
 ## CLI
 
-```sh
+```
 $ npm install --global has-ansi
 ```
 
