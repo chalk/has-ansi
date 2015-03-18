@@ -33,8 +33,8 @@ $ npm install --global has-ansi
 $ has-ansi --help
 
   Usage
-    has-ansi <string>
-    echo <string> | has-ansi
+    $ has-ansi <string>
+    $ echo <string> | has-ansi
 
   Exits with code 0 if input has ANSI escape codes and 1 if not
 ```

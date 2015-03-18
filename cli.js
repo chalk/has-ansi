@@ -1,45 +1,30 @@
 #!/usr/bin/env node
 'use strict';
 var stdin = require('get-stdin');
-var pkg = require('./package.json');
+var meow = require('meow');
 var hasAnsi = require('./');
-var argv = process.argv.slice(2);
-var input = argv[0];
 
-function help() {
-	console.log([
+var cli = meow({
+	help: [
+		'Usage',
+		'  $ has-ansi <string>',
+		'  $ echo <string> | has-ansi',
 		'',
-		'  ' + pkg.description,
-		'',
-		'  Usage',
-		'    has-ansi <string>',
-		'    echo <string> | has-ansi',
-		'',
-		'  Exits with code 0 if input has ANSI escape codes and 1 if not'
-	].join('\n'));
-}
+		'Exits with code 0 if input has ANSI escape codes and 1 if not'
+	].join('\n')
+});
 
 function init(data) {
 	process.exit(hasAnsi(data) ? 0 : 1);
 }
 
-if (argv.indexOf('--help') !== -1) {
-	help();
-	return;
-}
-
-if (argv.indexOf('--version') !== -1) {
-	console.log(pkg.version);
-	return;
-}
-
 if (process.stdin.isTTY) {
-	if (!input) {
-		help();
-		return;
+	if (!cli.input[0]) {
+		console.error('String required');
+		process.exit(2);
 	}
 
-	init(input);
+	init(cli.input[0]);
 } else {
 	stdin(init);
 }
