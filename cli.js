@@ -11,7 +11,7 @@ var cli = meow({
 		'  $ echo <string> | has-ansi',
 		'',
 		'Exits with code 0 if input has ANSI escape codes and 1 if not'
-	].join('\n')
+	]
 });
 
 function init(data) {
