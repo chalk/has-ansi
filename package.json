@@ -13,21 +13,16 @@
     "Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)",
     "Joshua Appelman <jappelman@xebia.com> (jbnicolai.com)"
   ],
-  "bin": "cli.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "node test.js"
   },
   "files": [
-    "index.js",
-    "cli.js"
+    "index.js"
   ],
   "keywords": [
-    "cli-app",
-    "cli",
-    "bin",
     "ansi",
     "styles",
     "color",
@@ -52,11 +47,9 @@
     "has"
   ],
   "dependencies": {
-    "ansi-regex": "^1.1.0",
-    "get-stdin": "^4.0.1",
-    "meow": "^3.3.0"
+    "ansi-regex": "^2.0.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "ava": "0.0.4"
   }
 }
