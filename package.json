@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Check if a string has ANSI escape codes",
   "license": "MIT",
-  "repository": "sindresorhus/has-ansi",
+  "repository": "chalk/has-ansi",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
