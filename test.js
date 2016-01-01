@@ -1,9 +1,7 @@
-'use strict';
-var test = require('ava');
-var hasAnsi = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(hasAnsi('foo\u001b[4mcake\u001b[0m'));
-	t.assert(!hasAnsi('cake'));
-	t.end();
+test(t => {
+	t.true(m('foo\u001b[4mcake\u001b[0m'));
+	t.false(m('cake'));
 });
