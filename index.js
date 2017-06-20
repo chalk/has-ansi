@@ -1,7 +1,7 @@
 'use strict';
-var ansiRegex = require('ansi-regex');
+const ansiRegex = require('ansi-regex');
 
-// remove the `g` flag
-var re = new RegExp(ansiRegex().source);
+// Remove the `g` flag
+const re = new RegExp(ansiRegex().source);
 
-module.exports = re.test.bind(re);
+module.exports = input => re.test(input);

@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from './';
+import m from '.';
 
 test(t => {
-	t.true(m('foo\u001b[4mcake\u001b[0m'));
+	t.true(m('foo\u001B[4mcake\u001B[0m'));
 	t.false(m('cake'));
 });

@@ -1,21 +1,21 @@
 # has-ansi [![Build Status](https://travis-ci.org/chalk/has-ansi.svg?branch=master)](https://travis-ci.org/chalk/has-ansi)
 
-> Check if a string has [ANSI escape codes](http://en.wikipedia.org/wiki/ANSI_escape_code)
+> Check if a string has [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
 
 ## Install
 
 ```
-$ npm install --save has-ansi
+$ npm install has-ansi
 ```
 
 
 ## Usage
 
 ```js
-var hasAnsi = require('has-ansi');
+const hasAnsi = require('has-ansi');
 
-hasAnsi('\u001b[4mcake\u001b[0m');
+hasAnsi('\u001B[4mUnicorn\u001B[0m');
 //=> true
 
 hasAnsi('cake');
@@ -31,6 +31,11 @@ hasAnsi('cake');
 - [chalk](https://github.com/chalk/chalk) - Terminal string styling done right
 
 
+## Maintainers
+
+- [Sindre Sorhus](https://github.com/sindresorhus)
+- [Josh Junon](https://github.com/qix-)
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT
