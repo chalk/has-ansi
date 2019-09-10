@@ -1,7 +1,7 @@
 import test from 'ava';
-import m from '.';
+import hasAnsi from '.';
 
-test(t => {
-	t.true(m('foo\u001B[4mcake\u001B[0m'));
-	t.false(m('cake'));
+test('main', t => {
+	t.true(hasAnsi('foo\u001B[4mcake\u001B[0m'));
+	t.false(hasAnsi('cake'));
 });
