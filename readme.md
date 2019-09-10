@@ -36,6 +36,15 @@ hasAnsi('cake');
 - [Sindre Sorhus](https://github.com/sindresorhus)
 - [Josh Junon](https://github.com/qix-)
 
-## License
 
-MIT
+---
+
+<div align="center">
+	<b>
+		<a href="https://tidelift.com/subscription/pkg/npm-has-ansi?utm_source=npm-has-ansi&utm_medium=referral&utm_campaign=readme">Get professional support for this package with a Tidelift subscription</a>
+	</b>
+	<br>
+	<sub>
+		Tidelift helps make open source sustainable for maintainers while giving companies<br>assurances about security, maintenance, and licensing for their dependencies.
+	</sub>
+</div>
