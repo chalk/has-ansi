@@ -1,4 +1,4 @@
-# has-ansi [![Build Status](https://travis-ci.org/chalk/has-ansi.svg?branch=master)](https://travis-ci.org/chalk/has-ansi)
+# has-ansi
 
 > Check if a string has [ANSI escape codes](https://en.wikipedia.org/wiki/ANSI_escape_code)
 
