@@ -1,6 +1,6 @@
 {
 	"name": "has-ansi",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"description": "Check if a string has ANSI escape codes",
 	"license": "MIT",
 	"repository": "chalk/has-ansi",
