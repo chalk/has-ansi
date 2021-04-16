@@ -4,13 +4,16 @@
 	"description": "Check if a string has ANSI escape codes",
 	"license": "MIT",
 	"repository": "chalk/has-ansi",
+	"funding": "https://github.com/chalk/has-ansi?sponsor=1",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=12"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -42,10 +45,10 @@
 		"has"
 	],
 	"dependencies": {
-		"ansi-regex": "^4.1.0"
+		"ansi-regex": "^6.0.0"
 	},
 	"devDependencies": {
-		"ava": "^2.3.0",
-		"xo": "^0.24.0"
+		"ava": "^3.15.0",
+		"xo": "^0.38.2"
 	}
 }
