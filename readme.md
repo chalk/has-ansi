@@ -4,8 +4,8 @@
 
 ## Install
 
-```
-$ npm install has-ansi
+```sh
+npm install has-ansi
 ```
 
 ## Usage
